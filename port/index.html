@@ -28,7 +28,7 @@
   <section class="hero">
     <div class="hero-content">
       <p class="welcome-text">WELCOME TO MY WORLD ✨</p>
-      <h1>Hi,I'm Harshada Nagpure</h1>
+      <h1>Hi,I'm Harshada Nagpurree</h1>
       <h2><span class="highlight">Work in </span>BNY </h2>
       <p class="description">Passionate about delivering seamless onboarding experiences for clients in the global financial sector.
         With a detail-oriented mindset and commitment to service excellence, I help ensure efficient activation and client satisfaction at every step.</p>
@@ -681,6 +681,54 @@
 
 
 
+<!-- 🌟 Stylish Footer -->
+<footer style="background: #20032e; color: white; text-align: center; padding: 30px 20px; border-radius: 40px 40px 0 0; box-shadow: 0 0 20px rgba(255, 0, 255, 0.2); margin-top: 40px;">
+    <div style="font-size: 18px; margin-bottom: 10px;">
+      <span id="view-count">Views: Loading...</span> &nbsp; | &nbsp;
+      <span id="location-info">Detecting location...</span>
+    </div>
+  
+    <div style="margin-top: 15px;">
+ 
+      <a href="mailto:yourmail@gmail.com" style="color: #33ccff; text-decoration: none; margin: 0 10px;">
+        <i class="fa-solid fa-envelope"></i> Gmail
+      </a>
+    </div>
+  
+    <div style="margin-top: 15px; font-size: 14px; color: #aaa;">
+      &copy; 2025 Shubhm Bende | Built with ❤️
+    </div>
+  </footer>
+  
+  <!-- 💬 Font Awesome CDN for Icons -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  
+  <!-- ✅ Page View Counter -->
+  <script>
+    fetch("https://abacus.jasoncameron.dev/hit/shubhmbende.github.io/myweb/port/")
+    .then(res => res.json())
+    .then(data => {
+      document.getElementById("visits").textContent = `Views: ${data.value}`;
+    })
+    .catch(() => {
+      document.getElementById("visits").textContent = "Views: Offline";
+    });
+
+  </script>
+  
+  <!-- 🌍 Geo Tracker (Use your real token below) -->
+  <script>
+    fetch("https://ipinfo.io/json?token=9009b13a5ce7e1") // Replace with token from https://ipinfo.io
+      .then(response => response.json())
+      .then(data => {
+        const location = `📍 ${data.city}, ${data.region}, ${data.country}`;
+        document.getElementById("location-info").textContent = location;
+      })
+      .catch(() => {
+        document.getElementById("location-info").textContent = "📍 Location not found";
+      });
+  </script>
+  
 
 
 
@@ -688,6 +736,11 @@
 
 
 
+
+
+
+
+  
 
 </body>
 </html>
