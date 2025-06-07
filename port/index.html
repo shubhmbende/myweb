@@ -17,8 +17,9 @@
         <li><a href="#" class="active">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#projects">My Projects</a></li>
-        <li><a href="#test">Testimonial</a></li>
+        
         <li><a href="#contact-section">Contact</a></li>
+        <li><a href="#test"></a></li>
       </ul>
       <a href="#contact-section" class="btn-contact">Contact</a>
     </nav>
@@ -83,15 +84,22 @@
       font-family: 'Segoe UI', sans-serif;
       background: linear-gradient(180deg, #1e0033, #2b014f);
       color: #fff;
+
+   
     }
 
     .containerr {
-      max-width: 1000px;
-      margin: 50px auto;
-      padding: 100px;
+      
+      
+
+
       display: flex;
-      align-items: center;
-      gap: 40px;
+  flex-direction: column;
+  align-items: center;
+  max-width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow-wrap: break-word;
     }
 
     .avatar-container {
@@ -104,16 +112,35 @@
       width: 200px;
       height: 300px;
       overflow: hidden;
+      box-shadow: 0 0 30px rgba(255, 0, 255, 0.3);
     }
 
     .avatar-container img {
       width: 107%;
       object-fit: cover;
+      
     }
 
     .content {
-      flex: 2;
+    
+      text-align: center;
+  max-width: 100%;
+  padding: 10px;
+  word-wrap: break-word;
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(255, 0, 255, 0.3);
     }
+
+    .content p {
+        font-size: 16px;
+        line-height: 1.6;
+        text-align: justify;
+        margin: 10px 0;
+        padding: 0 10px;
+      }
+
+
+
 
     h1 {
       font-size: 36px;
@@ -133,27 +160,33 @@
       background-color: #6a0dad;
       padding: 10px 15px;
       border-radius: 10px;
+      
     }
 
     .highlight::before {
       content: "✨";
       margin-right: 10px;
+      
     }
 
     .skills {
       margin-top: 30px;
       margin-bottom: 2px;
+      
+      
     }
 
     .skills h2 {
       font-size: 24px;
       margin-bottom: 2px;
+      
     }
 
 
     .skill-icons{
         font-size: 24px;
       margin-bottom: 2px;
+      
 
     }
 
@@ -166,6 +199,7 @@
         object-fit: contain;
         border-radius: 2px; /* Optional rounded corners */
         margin-bottom: 2px;
+        
       }
 
 
@@ -214,18 +248,18 @@
             <div class="skill-icons">
               <div class="skill">
                 <img src="i5.png" alt="Excel">
-                <p>Excel</p>
+                
               </div>
 
 
               <style>
                 .skills-section {
                   text-align: center;
-                  padding: 10px;
+                  padding: 1px;
                   background-color: #20032e; /* matches your purple theme */
                   color: white;
-                  margin-top: 10px;
-                  border-radius: 10px;
+                  margin-top: 1px;
+                  border-radius: 20px;
                 }
 
                 .skill-icons {
@@ -244,9 +278,9 @@
                   color: black;
                   background-color: white;
 
-                  padding: 10px;
+                  padding: 1px;
                   border-radius: 4px;
-                  width: 40opx;
+                  width: 250px;
                 }
 
                 .skill img {
@@ -657,7 +691,6 @@
 
 </body>
 </html>
-
 
 
 
